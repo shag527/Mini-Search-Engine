@@ -34,12 +34,14 @@ int main(int argc, char **argv)
         return -1;
     }
 
-    cout<<"Checking....."<<endl;
+    cout<<"Checking file....."<<endl;
 
     long int num_of_lines=0, max_length=-1, k=atoi(argv[4]);
 
     if(get_file_size(&num_of_lines,&max_length,argv[2])==-1)
     return -1;
+    
+    cout<<"Checking complete....."<<endl;
 
     Map *obj=new Map(num_of_lines,max_length);
     Trie *trie=new Trie();
