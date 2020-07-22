@@ -1,7 +1,11 @@
 CC = g++
 default: search_engine clean
-search_engine: search_engine.o crawler.o indexing.o ranking.o trie_list.o search.o
-	$(CC) -o search_engine search_engine.o crawler.o indexing.o ranking.o trie_list.o search.o
+search_engine: search_engine.o crawler.o indexing.o ranking.o trie_list.o search.o scorelist.o maxheap.o
+	$(CC) -o search_engine search_engine.o crawler.o indexing.o ranking.o trie_list.o search.o  scorelist.o maxheap.o
+maxheap.o: maxheap.cpp maxheap.h 
+	$(CC) -c maxheap.cpp
+scorelist.o: scorelist.cpp scorelist.h 
+	$(CC) -c scorelist.cpp
 search.o: search.cpp search.h 
 	$(CC) -c search.cpp
 trie_list.o: trie_list.cpp trie_list.h 

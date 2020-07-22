@@ -22,7 +22,7 @@ int get_file_size(long int* num_of_lines, long int* max_length, char* text_file)
         }
         fclose(file);
         delete line;
-        if(*num_of_lines==0 || *max_length<3)
+        if(*num_of_lines==0 || *max_length<6)
         {
             cout<<"Nothing to check!"<<endl;
             return -1;

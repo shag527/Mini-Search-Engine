@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+#include "scorelist.h"
 
 #ifndef TRIE_LIST_H
 #define TRIE_LIST_H
@@ -14,6 +14,6 @@ class list_node
         void add(int doc_id);
         int search(int doc_id);
         int volume();
-
+        void pass_documents(score_list *scorelist);
 };
 #endif

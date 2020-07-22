@@ -41,6 +41,7 @@ void Trie::insert(char *token, int id)
         sibling=new Trie;
         sibling->insert(token,id);
     }
+    return;
 }
 
 int Trie::tf_search_word(int id,char* word,int cur)
@@ -110,4 +111,32 @@ void Trie::search_all(char* buffer,int cur)
     sibling->search_all(buffer,cur);
     buffer[cur]='\0';
 
+}
+
+void Trie::search(char* word,int cur, score_list* scorelist)
+{
+    if(word[cur]==val)
+    {
+        if(cur==strlen(word)-1)
+        {
+            if(list!=NULL)
+            return list->pass_documents(scorelist);
+            else
+            return ;
+        }
+        else
+        {
+            if(child!=NULL)
+            child->search(word,cur+1,scorelist);
+            else
+            return;
+        }
+    }
+    else
+    {
+        if(sibling!=NULL)
+        sibling->search(word,cur,scorelist);
+        else
+        return;
+    }
 }

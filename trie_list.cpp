@@ -39,3 +39,10 @@ int list_node::volume()
     else
     return 1;
 }
+
+void list_node::pass_documents(score_list *scorelist)
+{
+    scorelist->insert(id);
+    if(next!=NULL)
+    next->pass_documents(scorelist);
+}
