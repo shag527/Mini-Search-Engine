@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<stdio.h>
 #include "ranking.h"
 #include "indexing.h"
 #include "scorelist.h"
