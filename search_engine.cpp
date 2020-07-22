@@ -1,5 +1,6 @@
 #include "search_engine.h"
 using namespace std;
+
 int input_manager(char *input,Trie *trie, Map *obj,int k)
 {
     char *token=strtok(input," \t\n");
@@ -51,13 +52,10 @@ int main(int argc, char **argv)
         delete obj;
         return -1;
     }
-    for(int i=0;i<obj->get_doc_size();i++)
-    {
-        //cout<<i<<endl;
-        (obj->print(i));
-    }
-    cout<<"Initialization Finished!"<<endl;
-    cout<<num_of_lines<<" "<<max_length<<endl;
+    //for(int i=0;i<obj->get_doc_size();i++)
+    //(obj->print(i));
+    cout<<"Initialization Finished! System is ready to search."<<endl;
+    //cout<<num_of_lines<<" "<<max_length<<endl;
     cout<<"Database Ckecked."<<endl;
     char* input=NULL;
     size_t input_length=0;

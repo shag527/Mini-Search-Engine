@@ -28,9 +28,7 @@ int Map::insert(char* line,int i)
     int cur;
     char *token;
     token=strtok(line," \t");
-    //cout<<"Token "<<token<<endl;
     cur=atoi(token);
-    //cout<<cur<<" "<<i<<endl;
     if(cur!=i)
     {
         token=NULL;
@@ -38,7 +36,6 @@ int Map::insert(char* line,int i)
         return -1;
     }
     token=strtok(NULL,"\n");
-    cout<<token<<endl;
     while(token[0]==' ')
     {
         token++;

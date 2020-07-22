@@ -14,7 +14,6 @@ int get_file_size(long int* num_of_lines, long int* max_length, char* text_file)
              {
                  *max_length=cur_length;
              }
-             //cout<<*num_of_lines<<endl;
              (*num_of_lines)++;
              delete line;
              line=NULL;

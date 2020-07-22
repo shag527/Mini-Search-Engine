@@ -134,12 +134,12 @@ void search(char* token, Trie *trie, Map *obj,int k)
             counter++;
         }
         cout<<endl;
-        delete line;
+        delete[] line;
         delete temp;
     }
     delete heap;
     delete scorelist;
-    cout<<endl;
+    //cout<<endl;
 }
 void df(Trie *trie)
 {

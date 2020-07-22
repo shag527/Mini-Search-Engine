@@ -44,7 +44,7 @@ void maxheap::insert(double score,int id)
     else
     {
         int temp_ind=mini_index(max_num_of_scores/2,max_num_of_scores);
-        if(score>temp_ind)
+        if(score>heap[temp_ind])
         index=temp_ind;
         else
         return;
@@ -69,7 +69,7 @@ int maxheap::max_child(int num1,int num2)
     }
     else if(num1<cur_num_of_scores)
     return num1;
-    else if(num1<cur_num_of_scores)
+    else if(num2<cur_num_of_scores)
     return num2;
     else
     return -1;
