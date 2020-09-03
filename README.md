@@ -69,3 +69,8 @@ This mode gives the total word count in an document. It can be used with the hel
 It requires no parameters.
 
 To exit the search engine, /exit command is used.
+
+## Screenshot
+<p align="center">
+  <img align="center" src="https://github.com/shag527/Mini-Search-Engine/blob/master/Working.png">
+  </p>
