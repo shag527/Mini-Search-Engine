@@ -1,8 +1,7 @@
 # Mini-Search-Engine
 The process of searching is fundamental in computer science and its fields. Computer systems are often used to store large amounts of data from which individual
 records must be retrieved according to some search criterion. Thus the efficient storage of data to facilitate fast searching is an important issue, in terms of 
-both time as well as memory. For this various data structures are developed and implemented. This report proposes the implementation of an efficient searching 
-algorithm that is capable of finding information among a database of several entries. The project makes use of the Wikipedia data set, which has been pre-processed
+both time as well as memory. For this various data structures are developed and implemented. This engine is capable of finding information among a database of several entries. The project makes use of the Wikipedia data set, which has been pre-processed
 using Python. The searching and sorting is implemented using the trie, max heap and various linked lists in C++. The project has been developed on Ubuntu and 
 it uses the make utility in order to automate the mundane aspects of building executable from source code.
 
